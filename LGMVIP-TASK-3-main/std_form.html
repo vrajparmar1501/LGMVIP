@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="std_form.css">
+</head>
+
+<body>
+    <div class="first">
+        <h1>Registration Form:</h1>
+        <form id="registrationForm">
+            <div class="form-element">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-element">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your email" required>
+            </div>
+
+            <div class="form-element">
+                <label for="course">Course:</label>
+                <input type="text" id="course" name="course" placeholder="Enter Your course" required><br><br>
+            </div>
+
+            <div class="form-element">
+                <label for="dob">Date of Birth:</label>
+                <input type="text" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-element">
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" placeholder="Enter Your address" required></textarea>
+            </div>
+
+            <div class="form-element">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="FeMale">FeMale</option>
+                </select>
+            </div>
+            <div class="form-element">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="submittedData"></div>
+    </div>
+
+    <script src="std_form.js"></script>
+</body>
+
+</html>
